@@ -11,6 +11,7 @@ class RationalLogger(object):
         console.setLevel(log_level)
 
         messageFormat = self.setFormatter(show_logger_name, show_time)
+        print("hi")
 
         if os.name != 'nt':
             console.setFormatter(ColoredFormatter(messageFormat))
